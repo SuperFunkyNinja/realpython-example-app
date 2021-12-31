@@ -8,8 +8,9 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = "this-really-needs-to-be-changed"
+    
     # SQLALCHEMY_DATABASE_URI = "postgresql://postgres:55@localhost:5432/wordcount_dev"
-    # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL").replace("://", "ql://", 1)
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL").replace("://", "ql://", 1)
 
 
 class ProductionConfig(Config):
