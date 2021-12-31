@@ -1,2 +1,5 @@
 .venv/
 __pycache__/
+references.txt
+scratch.py
+.env
